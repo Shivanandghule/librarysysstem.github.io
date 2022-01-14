@@ -143,7 +143,8 @@ function showSlides() {
 }
 </script>
 <fieldset>
-<?php
+{{
+  <?php
 	include 'dbcon.php';
 
 $srh=$_POST['search'];
@@ -172,6 +173,8 @@ echo "</tr>";
 echo "</table>";
 mysqli_close($con);
 ?>
+}}
+  
 </fieldset>
 <center>
 <fieldset style="width:90%;border-style: solid;border-width: 4px; height:400px">
